@@ -4,7 +4,7 @@
 ![Three.js](https://img.shields.io/badge/Three.js-0.166.1-000000?logo=threedotjs&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Interactive%20Demo-06d6a0)
 
-A lightweight Web UI illustrating five major concepts in quantum physics using Three.js animations, served by Python 3.
+A lightweight Web UI illustrating five major concepts in quantum physics using Three.js animations, served by Python3.
 
 ## UI Preview
 
