@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Physics Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="hero">
+      <p class="hero-kicker">Interactive Science Visual Lab</p>
+      <h1>Top 5 Concepts of Quantum Physics</h1>
+      <p class="hero-subtitle">
+        Explore quantum behavior through live, animated simulations built with
+        Three.js.
+      </p>
+    </header>
+
+    <main class="layout">
+      <section class="panel controls" aria-label="Concept selection">
+        <h2>Concepts</h2>
+        <div id="concept-buttons" class="button-grid"></div>
+
+        <div class="details">
+          <h3 id="concept-title"></h3>
+          <p id="concept-description"></p>
+        </div>
+
+        <div class="slider-wrap">
+          <label for="concept-slider" id="slider-label">Parameter</label>
+          <input id="concept-slider" type="range" min="0" max="100" value="50" />
+          <p id="slider-value" aria-live="polite"></p>
+        </div>
+
+        <div class="explain-wrap">
+          <button id="explain-toggle" type="button" class="explain-toggle" aria-pressed="false">
+            Show 8th Grade Explanation
+          </button>
+          <p id="grade-explanation" class="grade-explanation" hidden></p>
+        </div>
+      </section>
+
+      <section class="panel visual" aria-label="Quantum visualization">
+        <canvas id="scene"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Concepts covered: Superposition, Wave-Particle Duality, Uncertainty
+        Principle, Entanglement, Quantum Tunneling.
+      </p>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

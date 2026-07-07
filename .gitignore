@@ -1,0 +1,7 @@
+# Python artifacts
+__pycache__/
+*.pyc
+
+# Local-only automation helpers
+push_it.sh
+commit_messages.txt
